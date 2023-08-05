@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+	<title>UserOperations</title>
+	<style type="text/css">
+	  p
+		{
+			  width:100px;
+		}
+	</style>
+	<script type="text/javascript">
+	  function fac()
+	  {
+	  	var n=parseInt(document.getElementById("num").value);
+	    var d=1;
+	    for(var i=1;i<=n;i++)
+	    {
+	      d=d*i;
+	    }
+	    document.getElementById("result").value=d;
+	  }
+	  function fact()
+	  {
+	  	var n=parseInt(document.getElementById("num").value);
+	    var l=[];
+	    for(var i=1;i<=n;i++)
+	    {
+	      if(n%i==0)
+	      {
+	        l.push(i);
+	      }
+	      document.getElementById("result").value=l;
+	    }
+	  }
+	  function rev()
+	  {
+	  	var n=parseInt(document.getElementById("num").value);
+	    n = n + "";
+	    var l= n.split("").reverse().join("");
+	    document.getElementById("result").value=l
+	  }
+	   function per()
+	  {
+	  	var n=parseInt(document.getElementById("num").value);
+	    var l;
+	    for(var i=1;i<n;i++)
+	    {
+	      if(n%i==0)
+	      {
+	        l=l+i;
+	      }
+	    }
+	    if(l==n)
+	    {
+	      document.getElementById("result").value="PerfectNumber";
+	    }
+	    else
+	    {
+	      document.getElementById("result").value="Not A PerfectNumber";
+	    }
+	  }
+	</script>
+</head>
+<body>
+  <center>
+    <p>Enter the Number:</p>
+    <input type="text" id="num">
+    <br></br>
+    <Button onclick="fac()">Factorial</Button>
+    <br></br>
+    <Button onclick="fact()">Factors</Button>
+    <br></br>
+    <Button onclick="rev()">Reverse</Button>
+    <br></br>
+    <Button onclick="per()">PerfectNumber</Button>
+    <br></br>
+    <p> The Result is </p>
+    <input type="text" id="result">
+  </center>
+</body>
+</html>
+    
