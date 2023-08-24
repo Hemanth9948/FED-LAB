@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login </title>
+	<style type="text/css">
+		div
+		{
+			display:flex;
+			height:100px;
+			width:300px;
+		}
+	</style>
+	<script type="text/javascript">
+		function check()
+		{
+			var u= document.getElementById("user").value;
+			var p= document.getElementById("pass").value;
+			if(u=="siddu" && p=="pass")
+			{
+				window.open("jsp1.html");
+			}
+		}
+	</script>
+</head>
+<body style="background-color:black;margin-top:200px"><center>
+	<div><img src="login.jpg" style="height:100px;width:100px;border-radius:50%;">
+	<p style="color:white;padding-left:10px;font-size:25px;padding-top:20px;transform:rotateY(5deg) rotateZ(5deg)"> E-Library </p></div>
+	<br><br>
+	<input type="text" id="user" placeholder="UserName" style="color:white;border-style:none;border-bottom:3px solid white;background-color:black;">
+	<br><br>
+	<input type="text" id="pass" placeholder="Password" style="color:white;border-style:none;border-bottom:3px solid white;background-color:black;">
+	<br><br>
+	<button style="color:white;border-style:none;border:3px solid white;background-color:black;border-radius:16px;" onclick="check()"> Login </button></center>
+
+
+
+</body></html>
